@@ -1,4 +1,4 @@
-const User=require('../models/user.model');
+const User=require('/user.model');
 exports.test=function(req,res){
     res.send('test done!');
 };

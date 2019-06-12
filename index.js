@@ -1,28 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
-import Navigation from './Navigation';
-import  Services from'./Services';
-import  About from'./About';
-import Header from './Header';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <Navigation logoTitle="React Project" />
-                <Header title="Stylish Portfolio"button="Find Out More"/>
-                <About button="About this Company"/>
-                <Services/>
-            </div>
-        );
-    }
-
-}
 ReactDOM.render(<App />, document.getElementById('root'));
-//registerServiceWorker();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
